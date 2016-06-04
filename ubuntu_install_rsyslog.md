@@ -1,7 +1,6 @@
 # ubuntu install rsyslog
 ## 1.install rsyslog
 >  ###### 1.Enter the following command:
-
 ```
 sudo add-apt-repository ppa:adiscon/v8-stable
 ```
@@ -13,6 +12,7 @@ sudo apt-get update
 ```
 sudo apt-get install rsyslog
 ```
+
 ## 2. install rsyslog-elasticsearch:
 ```
 sudo apt-get install rsyslog-elasticsearch
