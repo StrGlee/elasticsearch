@@ -1,7 +1,7 @@
 # elasticsearch install
-ubuntu14.04
-java8
-elasticsearch2.3.1
+ubuntu14.04   
+java8   
+elasticsearch2.3.1   
 ik-analyzer
 ## Step 1.Installing Java
 ```
