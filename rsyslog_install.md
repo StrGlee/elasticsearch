@@ -1,14 +1,14 @@
 # ubuntu install rsyslog
 ## 1.install rsyslog
-> ###### 1.Enter the following command:
+###### 1.Enter the following command:
 ```
 sudo add-apt-repository ppa:adiscon/v8-stable
 ```
-> ###### 2. Then update your apt cache:  
+###### 2. Then update your apt cache:  
 ```
 sudo apt-get update
 ```
-> ###### 3. Finally install the new rsyslog version:  
+###### 3. Finally install the new rsyslog version:  
 ```
 sudo apt-get install rsyslog
 ```
