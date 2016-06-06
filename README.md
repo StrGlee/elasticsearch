@@ -7,3 +7,5 @@
 ## elk 安装
 * elk 安装 [链接](https://github.com/StrGlee/es_strglee/blob/master/elk_install.md)
 * rsyslog 安装 [链接](https://github.com/StrGlee/es_strglee/blob/master/rsyslog_install.md)
+
+#QT
