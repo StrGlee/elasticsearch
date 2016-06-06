@@ -10,4 +10,4 @@
 
 ## Q&A
 
-* elasticsearch-match-vs-term-query [链接](https://github.com/StrGlee/es_strglee/blob/master/elasticsearch-match-vs-term-query.md)
+* elasticsearch-match-vs-term-query [链接](https://github.com/StrGlee/es_strglee/blob/master/Q&A/elasticsearch-match-vs-term-query.md)
