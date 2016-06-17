@@ -148,7 +148,7 @@ access_log  /usr/share/nginx/logs/test.access.log  logstash;
  REFER: https://www.elastic.co/guide/en/marvel/current/installing-marvel.html
  ```
 
- ### 6. install head
+### 6. install head
  ```
  sudo /usr/share/elasticsearch/bin/plugin install mobz/elasticsearch-head
 
