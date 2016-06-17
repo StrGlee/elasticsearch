@@ -52,7 +52,7 @@ access_log  /usr/share/nginx/logs/test.access.log  logstash;
 ```
  &emsp;&emsp;这个时候，它就会把test.access.log中的数据传送到redis中，相当于tail -f。
 
- ### 开启logstash indexer
+### 开启logstash indexer
 &emsp;&emsp; 创建 logstash indexer 配置文件
 ```
  vim /usr/local/logstash/etc/logstash_indexer.conf
