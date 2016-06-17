@@ -103,4 +103,54 @@ access_log  /usr/share/nginx/logs/test.access.log  logstash;
 
 &emsp;&emsp;好了，现在的结构就完成了，你可以访问一次test.dev之后就在kibana的控制台看到这个访问的日志了。而且还是结构化好的了，非常方便查找。  
  ### 使用kibana进行查看
- &emsp;&emsp;依次开启es，logstash，kibana之后，可以使用es的head插件确认下es中有access-xx.xx.xx索引的数据，然后打开kibana的页面，第一次进入的时候会让你选择mapping，索引名字填写access-*，则kibana自动会创建mapping
+ &emsp;&emsp;依次开启es，logstash，kibana之后，可以使用es的head插件确认下es中有access-xx.xx.xx索引的数据，然后打开kibana的页面，第一次进入的时候会让你选择mapping，索引名字填写access-\*，则kibana自动会创建mapping  
+
+
+ ### 1. install java8
+ ```
+ sudo add-apt-repository ppa:webupd8team/java
+ sudo apt-get install oracle-java8-installer
+ ```
+
+ ### 2. install es 2.3.3
+```
+ wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-2.3.3.deb
+ sudo dpkg -i elasticsearch-2.3.3.deb
+ sudo update-rc.d elasticsearch defaults
+ sudo chmod 755 /etc/elasticsearch/
+ sudo mv elasticsearch.yml /etc/elasticsearch/
+ sudo service elasticsearch start
+ ```
+
+### 3. install kibana
+```
+ wget https://download.elastic.co/kibana/kibana/kibana_4.5.1_amd64.deb
+ sudo dpkg -i kibana_4.5.1_amd64.deb
+ sudo update-rc.d kibana defaults
+ sudo service kibana start
+
+ sudo htpasswd -c /etc/nginx/htpasswd username
+ password
+ ```
+### 4. install logstash
+```
+ wget https://download.elastic.co/logstash/logstash/packages/debian/logstash_2.3.3-1_all.deb
+ sudo dpkg -i logstash_2.3.3-1_all.deb
+ sudo update-rc.d logstash defaults
+ sudo service logstash start
+ ```
+### 5. install marvel
+```
+ sudo /usr/share/elasticsearch/bin/plugin install license
+ sudo /usr/share/elasticsearch/bin/plugin install marvel-agent
+ sudo /opt/kibana/bin/kibana plugin --install elasticsearch/marvel/2.3.3
+
+ REFER: https://www.elastic.co/guide/en/marvel/current/installing-marvel.html
+ ```
+
+ ### 6. install head
+ ```
+ sudo /usr/share/elasticsearch/bin/plugin install mobz/elasticsearch-head
+
+ REFER: https://mobz.github.io/elasticsearch-head/
+```
