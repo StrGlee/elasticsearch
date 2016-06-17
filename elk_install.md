@@ -106,13 +106,13 @@ access_log  /usr/share/nginx/logs/test.access.log  logstash;
  &emsp;&emsp;依次开启es，logstash，kibana之后，可以使用es的head插件确认下es中有access-xx.xx.xx索引的数据，然后打开kibana的页面，第一次进入的时候会让你选择mapping，索引名字填写access-\*，则kibana自动会创建mapping  
 
 
- ### 1. install java8
+### 1. install java8
  ```
  sudo add-apt-repository ppa:webupd8team/java
  sudo apt-get install oracle-java8-installer
  ```
 
- ### 2. install es 2.3.3
+### 2. install es 2.3.3
 ```
  wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-2.3.3.deb
  sudo dpkg -i elasticsearch-2.3.3.deb
