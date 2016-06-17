@@ -22,7 +22,9 @@
 ```
 access_log  /usr/share/nginx/logs/test.access.log  logstash;
 ```
+
 ### 开启logstash agent
+
 &emsp;&emsp;注：这里也可以不用logstash，直接使用rsyslog   
 &emsp;&emsp;创建logstash agent 配置文件
 ```
